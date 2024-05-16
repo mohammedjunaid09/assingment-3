@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Oasis</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background: rgba(0, 0, 0, 0.7) url(./bg.jpg) no-repeat center center/cover;
+            background-blend-mode: darken;
+        }
+
+        .navbar {
+            height: 100px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 20px;
+            font-size: 25px;
+            text-shadow: 5px 2px 12px black;
+            cursor: pointer;
+        }
+
+        .navbar ul {
+            display: flex;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar ul li a {
+            color: white;
+            padding-right: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-shadow: 5px 2px 12px black;
+            margin: 30px;
+            border-radius: 20px;
+            padding: 10px;
+
+        }
+
+        .navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+        .container {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aqua; */
+            margin-top: 50px;
+        }
+
+        .container .img {
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 40px;
+        }
+
+        img {
+            border-radius: 40px;
+            margin-right: 100px;
+            margin-left: 80px;
+            transition: 0.5s ease;
+            cursor: pointer;
+            box-shadow: 1px 1px 50px 1px black;
+
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            margin-right: 100px;
+            margin-left: 100px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .content2 {
+            color: white;
+            margin-right: 100px;
+            margin-left: 100px;
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .container .content b {
+            font-size: 30px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .container .content2 b {
+            font-size: 30px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .container .btn1 {
+            display: inline-block;
+        }
+
+        .btn1 {
+            border-radius: 20px;
+            padding: 10px 20px 10px 20px;
+            margin-top: 10px;
+            border: 2px solid black;
+            cursor: pointer;
+            box-shadow: 3px 3px 30px 2px black;
+        }
+
+        .btn2 {
+            border-radius: 20px;
+            padding: 10px 20px 10px 20px;
+            margin-top: 10px;
+            border: 2px solid black;
+            cursor: pointer;
+            box-shadow: 3px 3px 30px 2px black;
+        }
+
+        .btn1:hover {
+            color: white;
+            background-color: black;
+        }
+        .btn2:hover {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Fashion Oasis</h1>
+        </div>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="img"><img src="./3img.jpg" alt=""></div>
+        <p class="content"><b>men's suit 9999RS\-</b> <br> In a business setting, a black suit exudes professionalism
+            and gravitas, making it a go-to option for important meetings and presentations. For a more casual affair, a
+            black suit can be paired with less formal accessories and styled in a relaxed manner. <button
+                class="btn1">Buy Here</button></p>
+        <div class="img img2"><img src="./2img.jpg" alt=""></div>
+        <p class="content2"><b>women's 8999RS\-</b> <br> This women's black blazer has the details dialed in with a
+            notch lapel, pockets, and a deep, luxurious shade of black. Versatile from special events to weddings to
+            work, this is the black suit jacket women's style. <br> <button class="btn2">Buy Here</button></p>
+
+    </section>
+</body>
+
+</html>
